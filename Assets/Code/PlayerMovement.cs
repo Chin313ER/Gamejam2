@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 
     public int maxJump = 2;
     int jumpCount = 0;
+    Animator anim;
 
     private Vector3 originalScale;
 
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         originalScale = transform.localScale;
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -41,24 +43,29 @@ public class Player : MonoBehaviour
             move = 1;
         }
 
+        // เพิ่มตรงนี้
+        anim.SetFloat("Speed", Mathf.Abs(move));
+
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
 
         // หันหน้า
         if (move > 0)
         {
-            transform.localScale =
-                new Vector3(
-                    -Mathf.Abs(originalScale.x),
-                    originalScale.y,
-                    originalScale.z);
+            // กด D = หันขวา
+            transform.localScale = new Vector3(
+                Mathf.Abs(originalScale.x),
+                originalScale.y,
+                originalScale.z
+            );
         }
         else if (move < 0)
         {
-            transform.localScale =
-                new Vector3(
-                    Mathf.Abs(originalScale.x),
-                    originalScale.y,
-                    originalScale.z);
+            // กด A = หันซ้าย
+            transform.localScale = new Vector3(
+                -Mathf.Abs(originalScale.x),
+                originalScale.y,
+                originalScale.z
+            );
         }
 
         // กระโดด
@@ -66,10 +73,13 @@ public class Player : MonoBehaviour
         {
             jumpCount++;
 
+            anim.SetBool("jump", true);
+
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
 
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
+
     }
 
     // แตะพื้น = รีเซ็ตจำนวนกระโดด
@@ -78,6 +88,9 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             jumpCount = 0;
+
+            anim.SetBool("jump", false);
         }
     }
+
 }

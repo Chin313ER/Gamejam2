@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: 7528fcc2d14e044498e685d2712d2e1f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1411322156178155009
+    second: Designer (26)_0
+  - first:
+      213: 8774338697869213076
+    second: Designer (26)_1
+  - first:
+      213: 6114238710137068884
+    second: Designer (26)_2
+  - first:
+      213: -6694527321597215967
+    second: Designer (26)_3
+  - first:
+      213: 7206053645849315003
+    second: Designer (26)_4
+  - first:
+      213: -7989248107812451531
+    second: Designer (26)_5
+  - first:
+      213: -6544670433780408020
+    second: Designer (26)_6
+  - first:
+      213: 6008965108229932017
+    second: Designer (26)_7
+  - first:
+      213: 7752428035727952894
+    second: Designer (26)_8
+  - first:
+      213: 7573113185329343322
+    second: Designer (26)_9
+  - first:
+      213: 780278935486674291
+    second: Designer (26)_10
+  - first:
+      213: -7178047526959273972
+    second: Designer (26)_11
+  - first:
+      213: 7417991385371586726
+    second: Designer (26)_12
+  - first:
+      213: 448978212371173144
+    second: Designer (26)_13
+  - first:
+      213: 2693841702890523682
+    second: Designer (26)_14
+  - first:
+      213: 4357246073859006866
+    second: Designer (26)_15
+  - first:
+      213: -7340240930576498207
+    second: Designer (26)_16
+  - first:
+      213: 8996655911390839390
+    second: Designer (26)_17
+  - first:
+      213: 1900881405594157316
+    second: Designer (26)_18
+  - first:
+      213: -4165528221193150681
+    second: Designer (26)_19
+  - first:
+      213: -827536832685313779
+    second: Designer (26)_20
+  - first:
+      213: 6405068685385697025
+    second: Designer (26)_21
+  - first:
+      213: -1659188923031486311
+    second: Designer (26)_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Designer (26)_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1081
+        width: 177
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9dc59f9f9f96ce0800000000000000
+      internalID: -1411322156178155009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1078
+        width: 177
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d3579ae86b4c970800000000000000
+      internalID: 8774338697869213076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_2
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1082
+        width: 179
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d99a556b32ad450800000000000000
+      internalID: 6114238710137068884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_3
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1084
+        width: 182
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12bfc01ced24813a0800000000000000
+      internalID: -6694527321597215967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 575
+        width: 195
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6c1419c9b010460800000000000000
+      internalID: 7206053645849315003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_5
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 576
+        width: 195
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b806fbc2d702190800000000000000
+      internalID: -7989248107812451531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_6
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 575
+        width: 206
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2164866ae8ac25a0800000000000000
+      internalID: -6544670433780408020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_7
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 576
+        width: 218
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f303c7dde1246350800000000000000
+      internalID: 6008965108229932017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 33
+        width: 198
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb08507938269b60800000000000000
+      internalID: 7752428035727952894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_9
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 108
+        width: 235
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5be167615a191960800000000000000
+      internalID: 7573113185329343322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_10
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 66
+        width: 175
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3753767ce8b14da00800000000000000
+      internalID: 780278935486674291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Designer (26)_11
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 34
+        width: 184
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08a8be1ec3726c90800000000000000
+      internalID: -7178047526959273972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9821fdfc98edfb44ca482c682a007402
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Designer (26)_0: -1411322156178155009
+      Designer (26)_1: 8774338697869213076
+      Designer (26)_10: 780278935486674291
+      Designer (26)_11: -7178047526959273972
+      Designer (26)_12: 7417991385371586726
+      Designer (26)_13: 448978212371173144
+      Designer (26)_14: 2693841702890523682
+      Designer (26)_15: 4357246073859006866
+      Designer (26)_16: -7340240930576498207
+      Designer (26)_17: 8996655911390839390
+      Designer (26)_18: 1900881405594157316
+      Designer (26)_19: -4165528221193150681
+      Designer (26)_2: 6114238710137068884
+      Designer (26)_20: -827536832685313779
+      Designer (26)_21: 6405068685385697025
+      Designer (26)_22: -1659188923031486311
+      Designer (26)_3: -6694527321597215967
+      Designer (26)_4: 7206053645849315003
+      Designer (26)_5: -7989248107812451531
+      Designer (26)_6: -6544670433780408020
+      Designer (26)_7: 6008965108229932017
+      Designer (26)_8: 7752428035727952894
+      Designer (26)_9: 7573113185329343322
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

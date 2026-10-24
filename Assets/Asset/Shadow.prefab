@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7698397486766060491}
   - component: {fileID: 7115372640248682443}
   - component: {fileID: 8151219385526794779}
+  - component: {fileID: 6209621942804504090}
   m_Layer: 0
   m_Name: Shadow
   m_TagString: Untagged
@@ -84,7 +85,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: -1411322156178155009, guid: 7528fcc2d14e044498e685d2712d2e1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -156,8 +157,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0.023128986, y: -0.018265128}
+  m_Size: {x: 1.8480568, y: 3.1756094}
   m_Direction: 0
 --- !u!114 &8151219385526794779
 MonoBehaviour:
@@ -175,3 +176,25 @@ MonoBehaviour:
   isControlled: 0
   jumpForce: 8
   maxJump: 1
+--- !u!95 &6209621942804504090
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977019527711083556}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 89b9e9f0290af1648a2d14a3fc1a05ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
