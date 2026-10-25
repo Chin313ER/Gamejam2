@@ -1,17 +1,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
 
     [Header("Inventory Data")]
-    public List<ItemData> items = new List<ItemData>();
+    public List<ItemData> requiredItems = new List<ItemData>(); // ลากไอเทมที่ต้องเก็บมาใส่เรียงตามช่อง
+    public List<ItemData> items = new List<ItemData>();         // ไอเทมที่ผู้เล่นเก็บได้แล้ว
 
     [Header("UI References")]
-    public GameObject inventoryPanel; // ลากตัว "inventory" มาใส่
-    public Image[] slots;             // ลาก Image, Image (1), Image (2), Image (3) มาใส่
+    public GameObject inventoryPanel;
+    public Image[] slots;
+
+    [Header("Slot Color Settings (ปรับสีเงาตรงนี้ได้)")]
+    public Color shadowColor = new Color(0f, 0f, 0f, 0.4f); // สีเงาดำลางๆ ตอนยังไม่ได้เก็บ
+    public Color normalColor = Color.white;                 // สีปกติตอนเก็บได้แล้ว
+
+    [Header("End Game Settings")]
+    public int targetItemCount = 3;
+    public GameObject winPanel;
 
     private void Awake()
     {
@@ -22,6 +32,10 @@ public class InventoryManager : MonoBehaviour
     private void Start()
     {
         UpdateUI();
+        if (winPanel != null)
+        {
+            winPanel.SetActive(false);
+        }
     }
 
     private void Update()
@@ -42,24 +56,48 @@ public class InventoryManager : MonoBehaviour
 
         items.Add(newItem);
         UpdateUI();
+        CheckWinCondition();
+
         return true;
+    }
+
+    private void CheckWinCondition()
+    {
+        if (items.Count >= targetItemCount)
+        {
+
+            if (winPanel != null)
+            {
+                winPanel.SetActive(true);
+                Time.timeScale = 0f;
+            }
+        }
     }
 
     public void UpdateUI()
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            if (i < items.Count)
+            if (i < requiredItems.Count && requiredItems[i] != null)
             {
-                // ถ้ามีไอเทมในช่องนี้ ให้แสดงรูปไอเทม
-                slots[i].sprite = items[i].icon;
-                slots[i].color = Color.white; // ทำให้มองเห็นรูปชัดเจน
+                // แสดงรูปไอเทมประจำช่องนั้น
+                slots[i].sprite = requiredItems[i].icon;
+
+                // เช็คว่าผู้เล่นเก็บไอเทมชิ้นนี้มาหรือยัง
+                if (items.Contains(requiredItems[i]))
+                {
+                    slots[i].color = normalColor; // เก็บแล้ว -> แสดงสีชัดปกติ
+                }
+                else
+                {
+                    slots[i].color = shadowColor; // ยังไม่เก็บ -> แสดงเป็นเงาลางๆ
+                }
             }
             else
             {
-                // ถ้าช่องว่าง ให้เคลียร์รูปออก
+                // ถ้าช่องไหนไม่ได้กำหนดไอเทมที่ต้องเก็บไว้ ให้ทำเป็นช่องว่างจางๆ
                 slots[i].sprite = null;
-                slots[i].color = new Color(1, 1, 1, 0.2f); // ทำให้ช่องดูจางลงเวลาไม่มีของ
+                slots[i].color = new Color(1f, 1f, 1f, 0.1f);
             }
         }
     }

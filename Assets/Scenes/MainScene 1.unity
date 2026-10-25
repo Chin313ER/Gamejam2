@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
   itemData: {fileID: 11400000, guid: dea2dfbe80cdcbd4092d3ac327d4c57e, type: 2}
   pickupKey: 101
-  pickupPrompt: {fileID: 0}
+  pickupPrompt: {fileID: 1855660912}
 --- !u!50 &14278616
 Rigidbody2D:
   serializedVersion: 5
@@ -296,7 +296,7 @@ Transform:
   m_GameObject: {fileID: 14278614}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.5, y: -1.84, z: 0}
+  m_LocalPosition: {x: 8.12, y: -1.92, z: 0}
   m_LocalScale: {x: 0.25372002, y: 0.21533297, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -485,6 +485,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac6e9751ece3af4f96394c0ac1f8e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
+  requiredItems:
+  - {fileID: 11400000, guid: d567068b9288e044fb8b0a186518fdea, type: 2}
+  - {fileID: 11400000, guid: 2e6cb2fc95875ff40a0e425f4e77301c, type: 2}
+  - {fileID: 11400000, guid: dea2dfbe80cdcbd4092d3ac327d4c57e, type: 2}
+  - {fileID: 11400000, guid: 276ad63bc28c03d4cb51584d3c6e445a, type: 2}
   items: []
   inventoryPanel: {fileID: 273136555}
   slots:
@@ -492,6 +497,10 @@ MonoBehaviour:
   - {fileID: 1324371694}
   - {fileID: 207347091}
   - {fileID: 657170604}
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.4}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  targetItemCount: 3
+  winPanel: {fileID: 0}
 --- !u!1 &207347089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,7 +1017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
   itemData: {fileID: 11400000, guid: 2e6cb2fc95875ff40a0e425f4e77301c, type: 2}
   pickupKey: 101
-  pickupPrompt: {fileID: 0}
+  pickupPrompt: {fileID: 1855660912}
 --- !u!50 &572013163
 Rigidbody2D:
   serializedVersion: 5
@@ -1151,7 +1160,7 @@ Transform:
   m_GameObject: {fileID: 572013161}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.93, y: -1.93, z: 0}
+  m_LocalPosition: {x: 4.08, y: -1.87, z: 0}
   m_LocalScale: {x: 0.25372002, y: 0.21533297, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1767,8 +1776,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2033,7 +2042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
   itemData: {fileID: 11400000, guid: d567068b9288e044fb8b0a186518fdea, type: 2}
   pickupKey: 101
-  pickupPrompt: {fileID: 0}
+  pickupPrompt: {fileID: 1855660912}
 --- !u!50 &1306093879
 Rigidbody2D:
   serializedVersion: 5
@@ -2176,7 +2185,7 @@ Transform:
   m_GameObject: {fileID: 1306093877}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.505, y: -1.91, z: 0}
+  m_LocalPosition: {x: -2.49, y: -1.75, z: 0}
   m_LocalScale: {x: 0.25372002, y: 0.21533297, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2548,7 +2557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
   itemData: {fileID: 11400000, guid: 276ad63bc28c03d4cb51584d3c6e445a, type: 2}
   pickupKey: 101
-  pickupPrompt: {fileID: 0}
+  pickupPrompt: {fileID: 1855660912}
 --- !u!50 &1545028191
 Rigidbody2D:
   serializedVersion: 5
@@ -2691,7 +2700,7 @@ Transform:
   m_GameObject: {fileID: 1545028189}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.902, y: -1.799, z: 0}
+  m_LocalPosition: {x: 10.55, y: -1.799, z: 0}
   m_LocalScale: {x: 0.25372002, y: 0.21533297, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3252,7 +3261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 68}
+  m_AnchoredPosition: {x: 0, y: 79.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855660914
