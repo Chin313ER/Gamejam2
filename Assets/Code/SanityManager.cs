@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SanityManager : MonoBehaviour
 {
-    public Slider sanityBar;
+    public Image sanityBar;
 
     public float sanity = 100f;
     public float maxSanity = 100f;
@@ -15,8 +15,7 @@ public class SanityManager : MonoBehaviour
 
     void Start()
     {
-        sanityBar.maxValue = maxSanity;
-        sanityBar.value = sanity;
+        UpdateSanityBar();
     }
 
     void Update()
@@ -24,14 +23,10 @@ public class SanityManager : MonoBehaviour
         if (!shadowActive && sanity < maxSanity)
         {
             sanity += recoverSpeed * Time.deltaTime;
-
-            if (sanity > maxSanity)
-            {
-                sanity = maxSanity;
-            }
+            sanity = Mathf.Clamp(sanity, 0, maxSanity);
         }
 
-        sanityBar.value = sanity;
+        UpdateSanityBar();
 
         if (sanity <= 0)
         {
@@ -42,11 +37,7 @@ public class SanityManager : MonoBehaviour
     public void UseShadow()
     {
         sanity -= 20f;
-
-        if (sanity < 0)
-        {
-            sanity = 0;
-        }
+        sanity = Mathf.Clamp(sanity, 0, maxSanity);
 
         shadowActive = true;
     }
@@ -54,5 +45,10 @@ public class SanityManager : MonoBehaviour
     public void ReturnShadow()
     {
         shadowActive = false;
+    }
+
+    void UpdateSanityBar()
+    {
+        sanityBar.fillAmount = sanity / maxSanity;
     }
 }
