@@ -21,7 +21,7 @@ public class InventoryManager : MonoBehaviour
 
     [Header("End Game Settings")]
     public int targetItemCount = 3;
-    public GameObject winPanel;
+    public string winSceneName; // พิมพ์ชื่อซีนที่ต้องการเปลี่ยนไปเมื่อเก็บของครบ
 
     private void Awake()
     {
@@ -32,10 +32,6 @@ public class InventoryManager : MonoBehaviour
     private void Start()
     {
         UpdateUI();
-        if (winPanel != null)
-        {
-            winPanel.SetActive(false);
-        }
     }
 
     private void Update()
@@ -65,11 +61,16 @@ public class InventoryManager : MonoBehaviour
     {
         if (items.Count >= targetItemCount)
         {
+            Debug.Log("เก็บของครบแล้ว กำลังเปลี่ยนไปซีน: " + winSceneName);
 
-            if (winPanel != null)
+            // คำสั่งเปลี่ยนซีนทันทีเมื่อของครบ
+            if (!string.IsNullOrEmpty(winSceneName))
             {
-                winPanel.SetActive(true);
-                Time.timeScale = 0f;
+                SceneManager.LoadScene(winSceneName);
+            }
+            else
+            {
+                Debug.LogWarning("ยังไม่ได้ตั้งชื่อซีนในช่อง Win Scene Name!");
             }
         }
     }
