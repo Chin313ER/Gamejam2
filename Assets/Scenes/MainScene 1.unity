@@ -2837,7 +2837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1392177d2d1d20144bdf49122c106851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SanityManager
-  sanityBar: {fileID: 1665492754}
+  sanityBar: {fileID: 0}
   sanity: 100
   maxSanity: 100
   recoverSpeed: 10
