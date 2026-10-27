@@ -31,6 +31,18 @@ public class ShadowManager : MonoBehaviour
 
                 shadowScript =
                     currentShadow.GetComponent<ShadowController>();
+                Collider2D shadowCollider = currentShadow.GetComponent<Collider2D>();
+
+                GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall");
+
+                foreach (GameObject wall in walls)
+                {
+                    Physics2D.IgnoreCollision(
+                        shadowCollider,
+                        wall.GetComponent<Collider2D>(),
+                        true
+                    );
+                }
 
                 sanityManager.UseShadow();
             }

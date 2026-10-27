@@ -19,6 +19,7 @@ public class ShadowController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         originalScale = transform.localScale;
+        
     }
 
     void Update()
