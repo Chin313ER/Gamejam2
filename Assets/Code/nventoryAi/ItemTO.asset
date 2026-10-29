@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ItemTO
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: candleQ
-  icon: {fileID: 5860219828571522729, guid: 428f7cc6322bbf24e8f3b4b65d5f12e7, type: 3}
+  icon: {fileID: -8160024698922795063, guid: 810f51792107a6e4287b4b3f21b873c0, type: 3}
   description: 

@@ -48,6 +48,14 @@ public class ShadowManager : MonoBehaviour
             }
             else
             {
+                cameraFollow.target = player.transform;
+
+                Camera.main.transform.position =
+                    new Vector3(
+                        player.transform.position.x,
+                        player.transform.position.y,
+                        Camera.main.transform.position.z
+                    );
                 Destroy(currentShadow);
 
                 currentShadow = null;
@@ -73,12 +81,17 @@ public class ShadowManager : MonoBehaviour
             }
             else
             {
+                cameraFollow.target = player.transform;
+
                 player.canMove = true;
 
-                shadowScript.isControlled = false;
+                Destroy(currentShadow);
 
-                cameraFollow.target = player.transform;
+                currentShadow = null;
+
+                sanityManager.ReturnShadow();
             }
+
         }
     }
 }
