@@ -33,7 +33,7 @@ public class CutsceneManager : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("MainSceneNIG");
+                SceneManager.LoadScene("StartGame");
             }
         }
     }

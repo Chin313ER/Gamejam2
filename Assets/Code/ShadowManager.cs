@@ -10,7 +10,6 @@ public class ShadowManager : MonoBehaviour
     public SanityManager sanityManager;
 
     GameObject currentShadow;
-
     ShadowController shadowScript;
 
     void Update()
@@ -31,9 +30,12 @@ public class ShadowManager : MonoBehaviour
 
                 shadowScript =
                     currentShadow.GetComponent<ShadowController>();
-                Collider2D shadowCollider = currentShadow.GetComponent<Collider2D>();
 
-                GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall");
+                Collider2D shadowCollider =
+                    currentShadow.GetComponent<Collider2D>();
+
+                GameObject[] walls =
+                    GameObject.FindGameObjectsWithTag("Wall");
 
                 foreach (GameObject wall in walls)
                 {
@@ -48,6 +50,8 @@ public class ShadowManager : MonoBehaviour
             }
             else
             {
+                // กลับมาคุม Player ก่อนลบ Shadow
+
                 cameraFollow.target = player.transform;
 
                 Camera.main.transform.position =
@@ -56,42 +60,49 @@ public class ShadowManager : MonoBehaviour
                         player.transform.position.y,
                         Camera.main.transform.position.z
                     );
+
+                player.canMove = true;
+
+                if (shadowScript != null)
+                {
+                    shadowScript.isControlled = false;
+                }
+
                 Destroy(currentShadow);
 
                 currentShadow = null;
-
-                player.canMove = true;
 
                 sanityManager.ReturnShadow();
             }
         }
 
-        // R สลับควบคุม
+        // R สลับการควบคุม
 
         if (Keyboard.current.rKey.wasPressedThisFrame
             && currentShadow != null)
         {
             if (player.canMove)
             {
+                // คุม Shadow
+
                 player.canMove = false;
 
                 shadowScript.isControlled = true;
 
-                cameraFollow.target = currentShadow.transform;
+                cameraFollow.target =
+                    currentShadow.transform;
             }
             else
             {
-                cameraFollow.target = player.transform;
+                // กลับมาคุม Player
 
                 player.canMove = true;
 
-                Destroy(currentShadow);
+                shadowScript.isControlled = false;
 
-                currentShadow = null;
-
-                sanityManager.ReturnShadow();
+                cameraFollow.target =
+                    player.transform;
             }
-
         }
     }
 }

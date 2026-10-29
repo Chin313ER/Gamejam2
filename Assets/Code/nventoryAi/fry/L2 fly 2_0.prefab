@@ -155,4 +155,4 @@ MonoBehaviour:
   speed: 7
   direction: {x: -1, y: 0}
   sanityDamage: 20
-  lifeTime: 10
+  lifeTime: 5
