@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 636252355}
-  - component: {fileID: 636252354}
+  - component: {fileID: 636252356}
   m_Layer: 0
   m_Name: CutsceneManager
   m_TagString: Untagged
@@ -273,27 +273,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &636252354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636252353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 069395df5d2e5c04e8861ee8f2f0fd77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CutsceneManager
-  cutsceneImage: {fileID: 858945180}
-  frames:
-  - {fileID: -5601233842992254227, guid: 475108edaaba9c34f81633894f47e82c, type: 3}
-  - {fileID: 5835327138673719605, guid: ac3875e1cbf75304d95d61f32cfbd052, type: 3}
-  - {fileID: -7699190430010636134, guid: 23e4e7f43a08bda41bc01d5f1d820d1e, type: 3}
-  - {fileID: 4499714370797488777, guid: 62e04eea586ef7349a81500b5097b7f7, type: 3}
-  - {fileID: 5450121123318209237, guid: 674afa1186a1e104081c5da3be7d5c92, type: 3}
-  - {fileID: -2163305984006666894, guid: 1175e95eda7b06e42b550cd490fee9c2, type: 3}
-  fadeImage: {fileID: 899670159}
 --- !u!4 &636252355
 Transform:
   m_ObjectHideFlags: 0
@@ -309,6 +288,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &636252356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636252353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c44305e268a036459206afb298bf18b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CS
+  cutsceneImage: {fileID: 858945180}
+  frames:
+  - {fileID: -5601233842992254227, guid: 475108edaaba9c34f81633894f47e82c, type: 3}
+  - {fileID: 5835327138673719605, guid: ac3875e1cbf75304d95d61f32cfbd052, type: 3}
+  - {fileID: -7699190430010636134, guid: 23e4e7f43a08bda41bc01d5f1d820d1e, type: 3}
+  - {fileID: 4499714370797488777, guid: 62e04eea586ef7349a81500b5097b7f7, type: 3}
+  - {fileID: 5450121123318209237, guid: 674afa1186a1e104081c5da3be7d5c92, type: 3}
+  - {fileID: -2163305984006666894, guid: 1175e95eda7b06e42b550cd490fee9c2, type: 3}
+  fadeImage: {fileID: 899670159}
 --- !u!1 &803542234
 GameObject:
   m_ObjectHideFlags: 0

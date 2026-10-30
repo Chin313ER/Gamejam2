@@ -6,6 +6,9 @@ public class ItemPickup : MonoBehaviour
     public KeyCode pickupKey = KeyCode.E; // ปุ่มที่ใช้กดเก็บ (ค่าเริ่มต้นคือปุ่ม E)
     public GameObject pickupPrompt;       // (ไม่บังคับ) สำหรับใส่รูปปุ่มหรือข้อความแจ้งเตือนบนหัวไอเทม
 
+    public AudioClip pickupSound;
+
+
     private bool isPlayerInRange = false;
 
     private void Start()
@@ -25,7 +28,18 @@ public class ItemPickup : MonoBehaviour
             bool wasPickedUp = InventoryManager.Instance.AddItem(itemData);
             if (wasPickedUp)
             {
-                Destroy(gameObject); // ลบไอเทมออกจากฉากเมื่อเก็บสำเร็จ
+                { 
+                if (pickupSound != null)
+                {
+                    AudioSource.PlayClipAtPoint(
+                        pickupSound,
+                        Camera.main.transform.position
+                    );
+                }
+
+                Destroy(gameObject);
+            }
+            Destroy(gameObject); // ลบไอเทมออกจากฉากเมื่อเก็บสำเร็จ
             }
         }
     }
